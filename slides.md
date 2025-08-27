@@ -176,6 +176,258 @@ The ChatGPT launch triggered what can only be described as an AI gold rush. Ever
 -->
 
 ---
+
+# Beyond Chat: AI APIs
+
+## How Developers Integrate AI into Apps
+
+<div class="flex justify-center items-center h-full">
+  <div class="space-y-8">
+    
+<v-clicks>
+
+- 💬 **Chat Interface** - What most people know (ChatGPT, Claude, Gemini)
+- 🔌 **API Access** - The "behind-the-scenes" way apps use AI
+- 🏗️ **Think of APIs like electricity** - You don't see the power plant, just flip the switch
+- 📱 **Examples you use daily:**
+  - Gmail's smart compose
+  - Photo apps that remove backgrounds
+  - Translation in Google Translate
+  - Code suggestions in programming tools
+
+</v-clicks>
+
+  </div>
+</div>
+
+<!--
+APIs are like having AI as an invisible assistant that works inside other apps. Instead of going to ChatGPT's website, developers can send requests directly to AI and get responses back to power their own applications.
+-->
+
+---
+layout: two-cols
+---
+
+# API vs Chat: What's the Difference?
+
+**Chat Interface:** You visit a website, type, and get responses
+
+**API:** Apps send requests automatically behind the scenes
+
+<v-clicks>
+
+### Chat Interface:
+```
+You → ChatGPT Website → AI Response
+```
+
+### API Integration:
+```
+App → API Request → AI → Response → App
+```
+
+</v-clicks>
+
+::right::
+
+<div class="pl-8">
+
+<v-click>
+
+**The Result?** AI becomes invisible but everywhere:
+- 📧 Email apps auto-complete your sentences
+- 📸 Photo apps enhance images instantly  
+- 🛒 Shopping sites personalize recommendations
+- 🎵 Music apps create custom playlists
+
+</v-click>
+
+</div>
+
+<!--
+These examples show how APIs make AI feel like magic - it's working behind the scenes without you even knowing.
+-->
+
+---
+
+# Why This Matters
+
+## The API Revolution Changes Everything
+
+<div class="flex justify-center items-center h-full">
+  <div class="space-y-8">
+    
+<v-clicks>
+
+### For Users:
+- 🪄 **AI feels "magical" and seamless** - No switching between apps
+- ⚡ **Faster, more integrated experience** - AI is already where you work
+- 🎯 **Personalized to your context** - AI knows what app you're in
+
+### For Businesses:
+- 🔧 **Build AI-powered features easily** - No need to be Google or OpenAI
+- 💰 **Pay per use, not huge upfront costs** - Start small, scale up
+- 🚀 **Launch AI features in weeks, not years** - Use existing AI models
+
+</v-clicks>
+
+  </div>
+</div>
+
+<!--
+The API revolution means AI isn't just a chatbot you visit - it's becoming the invisible intelligence layer powering all your favorite apps.
+-->
+
+---
+
+# The RAG Revolution
+
+## Teaching AI Your Data Without Breaking the Bank
+
+<div class="flex justify-center items-center h-full">
+  <div class="space-y-8">
+    
+<v-clicks>
+
+- 🧠 **The Old Way: Fine-tuning** - Expensive, slow, required AI expertise
+- 💰 **Cost:** $50,000+ and months of work to teach AI your company data
+- 🔄 **Updates:** Want to add new info? Start the whole process again
+- 📚 **RAG: Retrieval-Augmented Generation** - Introduced by Meta in 2020
+- 🚀 **The timing:** Became popular during the 2022-2023 AI boom
+- 🎯 **Think of it as:** AI with access to your company's filing cabinet
+- ⚡ **The breakthrough:** AI can use ANY data you give it, instantly
+
+</v-clicks>
+
+  </div>
+</div>
+
+<!--
+RAG changed everything - instead of expensive fine-tuning, you can now just hand AI your documents and it can use them to answer questions. It's like hiring a researcher who has instant access to all your files.
+-->
+
+---
+
+# RAG Timeline: Perfect Timing
+
+## How RAG Rode the AI Wave
+
+<div class="flex justify-center items-center h-full">
+  <div class="space-y-6">
+    
+<v-clicks>
+
+- **2020** - 📝 Meta introduces RAG in research paper
+- **2021-2022** - 🔬 Research community explores the concept
+- **Nov 2022** - 🚀 ChatGPT launches, businesses need AI solutions
+- **2023** - 💼 RAG becomes practical for real business problems
+- **2024-2025** - 🌐 Major companies adopt RAG (AWS, Google, Microsoft, NVIDIA)
+
+### Why the Perfect Storm?
+
+- ChatGPT showed AI's power, but businesses needed **their own data**
+- RAG solved the problem **affordably and quickly**  
+- No need to wait years or spend millions on fine-tuning
+
+</v-clicks>
+
+  </div>
+</div>
+
+<!--
+RAG's popularity perfectly coincided with the ChatGPT boom - businesses suddenly wanted AI, and RAG made it possible to have AI that knew their specific information without breaking the bank.
+-->
+
+---
+layout: two-cols
+---
+
+# Fine-tuning vs RAG: The Comparison
+
+## Before RAG (Fine-tuning):
+
+<v-clicks>
+
+- 🔄 **Retrain entire AI model** with your data
+- 💰 **Months of work, expensive compute**
+- 🚫 **Hard to update or change**
+- 🏢 **Only big companies could afford it**
+
+</v-clicks>
+
+::right::
+
+<v-clicks>
+
+## With RAG (Retrieval-Augmented Generation):
+
+</v-clicks>
+
+<v-clicks>
+
+- 🔍 **AI searches your documents first**
+- 💡 **Uses found info to answer questions**
+- ⚡ **Update anytime by adding new docs**
+- 🌟 **Any business can now use AI**
+
+</v-clicks>
+
+<!--
+The contrast is dramatic - RAG made AI accessible to businesses of all sizes by removing the massive barriers of fine-tuning.
+-->
+
+
+---
+layout: two-cols
+---
+
+# RAG in Action: Real Examples
+
+**How RAG Works:**
+```
+User Question → Search Company Docs → 
+Send Relevant Info + Question to AI → 
+AI Answers Using Your Data
+```
+
+<v-clicks>
+
+### Real Business Applications:
+
+- 📋 **Customer Support:** AI answers using your product manuals
+- 🏥 **Healthcare:** AI references your medical research papers  
+- 💼 **Legal:** AI searches through contracts and case law
+- 📊 **Business:** AI analyzes your internal reports
+
+</v-clicks>
+
+::right::
+
+<div class="pl-8">
+
+<v-click>
+
+## The Result
+
+**For Small Companies:**
+- 🎯 **AI can be an expert in YOUR business**
+- 💼 **No need for expensive AI teams**
+- 🚀 **Launch AI features quickly**
+
+**For Users:**
+- 📚 **AI uses your exact information**
+- 🔄 **Always up-to-date with new documents**
+- ✅ **More accurate, relevant answers**
+
+</v-click>
+
+</div>
+
+<!--
+RAG democratized AI for business - now any company can have AI that knows their specific data without the massive costs of fine-tuning.
+-->
+
+---
 layout: two-cols
 laoutClass: gap-16
 ---
