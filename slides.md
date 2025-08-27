@@ -1,12 +1,11 @@
 ---
-theme: seriph
-background: https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=2832&q=80
+theme: bricks
+layout: cover
 title: The AI Revolution
 info: |
   ## The AI Revolution: From Dreams to Reality
   A journey through artificial intelligence history and the current boom
 
-class: text-center
 drawings:
   persist: false
 transition: slide-left
@@ -17,9 +16,7 @@ seoMeta:
 
 # The AI Revolution
 
-## From Dreams to Reality
-
-_A journey through the boom that's reshaping our world_
+### A journey through the boom that's reshaping our world
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer bg-white bg-op-10 hover:bg-op-20">
@@ -36,13 +33,22 @@ This presentation will take your audience through the fascinating journey of AI 
 -->
 
 ---
+layout: intro
+---
+
+<div class="mb-20">
+
+# a bit of history
+
+</div>
+
+---
 
 # Why AI Wasn't Accessible Before
 
-## The Barriers That Kept AI in the Labs
+### The Barriers That Kept AI in the Labs
 
-<div class="flex justify-center items-center h-full">
-  <div class="text-center space-y-8">
+<div class="mt-8 space-y-8">
     
 <v-clicks>
 
@@ -54,7 +60,6 @@ This presentation will take your audience through the fascinating journey of AI 
 
 </v-clicks>
 
-  </div>
 </div>
 
 <!--
@@ -65,10 +70,9 @@ Before ChatGPT, AI was expensive, complex, and accessible only to researchers an
 
 # The Technical Breakthroughs That Made It Possible
 
-## Key Innovations Leading to ChatGPT
+### Key Innovations Leading to ChatGPT
 
-<div class="flex justify-center items-center h-full">
-  <div class="text-center space-y-6">
+<div class="mt-8 space-y-6">
     
 <v-clicks>
 
@@ -82,7 +86,6 @@ Before ChatGPT, AI was expensive, complex, and accessible only to researchers an
 
 </v-clicks>
 
-  </div>
 </div>
 
 <!--
@@ -95,10 +98,9 @@ transition: fade-out
 
 # The ChatGPT Moment
 
-## November 30, 2022
+### November 30, 2022
 
-<div class="flex justify-center items-center h-full">
-  <div class="text-center space-y-8">
+<div class="mt-8 space-y-8">
     
 <v-clicks>
 
@@ -112,7 +114,6 @@ transition: fade-out
 
 </v-clicks>
 
-  </div>
 </div>
 
 <!--
@@ -120,15 +121,19 @@ The technology existed, but ChatGPT was the first to make powerful AI accessible
 -->
 
 ---
-layout: two-cols
+layout: section
 ---
 
 # The AI Gold Rush
 
+<div>
+
 **Before ChatGPT:** AI was for researchers and big tech
 
 **After ChatGPT:** The race for public AI tools
+</div>
 
+::right::
 <v-clicks>
 
 ### Companies Rush Their Products Public:
@@ -141,22 +146,7 @@ layout: two-cols
 
 </v-clicks>
 
-::right::
-
-<div class="pl-8">
-
-<v-click>
-
-## The Result?
-
-```mermaid
-graph LR
-    A[ChatGPT] --> B[Public Buzz]
-    B --> C[Companies Race]
-    C --> D[AI Everywhere]
-```
-
-</v-click>
+<div class="mt-8">
 
 <v-click>
 
@@ -177,31 +167,59 @@ The ChatGPT launch triggered what can only be described as an AI gold rush. Ever
 
 ---
 
-# Beyond Chat: AI APIs
+# Fun Fact: The Anthropic Story
 
-## How Developers Integrate AI into Apps
+### Why Claude Exists - A Tale of AI Safety
 
-<div class="flex justify-center items-center h-full">
-  <div class="space-y-8">
+<div class="mt-8 space-y-8">
     
 <v-clicks>
 
-- 💬 **Chat Interface** - What most people know (ChatGPT, Claude, Gemini)
-- 🔌 **API Access** - The "behind-the-scenes" way apps use AI
-- 🏗️ **Think of APIs like electricity** - You don't see the power plant, just flip the switch
-- 📱 **Examples you use daily:**
-  - Gmail's smart compose
-  - Photo apps that remove backgrounds
-  - Translation in Google Translate
-  - Code suggestions in programming tools
+- 👥 **2021: The Great OpenAI Exodus** - Dario & Daniela Amodei leave OpenAI with key researchers
+- 🛡️ **The reason:** Disagreements about AI safety and rapid commercialization
+- 🧭 **Their vision:** "Constitutional AI" - teaching AI to be helpful, harmless, and honest
+- 💰 **Google's bet:** $300M investment in Anthropic (2022)
+- 🤖 **The result:** Claude - designed with safety-first principles
+- ⚡ **The irony:** Now Claude competes directly with ChatGPT
 
 </v-clicks>
 
-  </div>
 </div>
 
 <!--
-APIs are like having AI as an invisible assistant that works inside other apps. Instead of going to ChatGPT's website, developers can send requests directly to AI and get responses back to power their own applications.
+Sometimes the biggest innovations come from people who disagree with the status quo. Anthropic's focus on AI safety created a real alternative to OpenAI's approach.
+-->
+
+---
+layout: intro
+---
+# Beyond Chat: AI APIs
+
+How Developers Integrate AI into Apps
+
+---
+
+# Plot Twist: Those Chat Apps Are Just... Apps
+
+### The Reality Behind ChatGPT and Claude.ai
+
+<div class="mt-8 space-y-8">
+    
+<v-clicks>
+
+- 🌐 **ChatGPT.com** - React app that calls OpenAI's API
+- 🤖 **Claude.ai** - Web app that calls Anthropic's API  
+- 📱 **The "AI" you see** - Just a nice user interface
+- 🧠 **The real AI** - Lives in data centers, accessed via APIs
+- 🔌 **Same models, different wrapping** - GPT-4, Claude, Gemini all available as APIs
+- 💡 **Why this matters** - Anyone can build their own "ChatGPT" using the same AI
+
+</v-clicks>
+
+</div>
+
+<!--
+This is a crucial understanding - what most people think of as "AI apps" are actually just regular web applications that happen to call AI APIs. The magic isn't in the interface, it's in the API.
 -->
 
 ---
@@ -210,9 +228,12 @@ layout: two-cols
 
 # API vs Chat: What's the Difference?
 
+<div>
+
 **Chat Interface:** You visit a website, type, and get responses
 
 **API:** Apps send requests automatically behind the scenes
+</div>
 
 <v-clicks>
 
@@ -235,8 +256,7 @@ App → API Request → AI → Response → App
 <v-click>
 
 **The Result?** AI becomes invisible but everywhere:
-- 📧 Email apps auto-complete your sentences
-- 📸 Photo apps enhance images instantly  
+- 📧 Email apps writes your emails
 - 🛒 Shopping sites personalize recommendations
 - 🎵 Music apps create custom playlists
 
@@ -252,26 +272,29 @@ These examples show how APIs make AI feel like magic - it's working behind the s
 
 # Why This Matters
 
-## The API Revolution Changes Everything
+### The API Revolution Changes Everything
 
-<div class="flex justify-center items-center h-full">
-  <div class="space-y-8">
+<div class="mt-8 space-y-8">
     
 <v-clicks>
+
+<div>
 
 ### For Users:
 - 🪄 **AI feels "magical" and seamless** - No switching between apps
 - ⚡ **Faster, more integrated experience** - AI is already where you work
 - 🎯 **Personalized to your context** - AI knows what app you're in
+</div>
+
+<div>
 
 ### For Businesses:
 - 🔧 **Build AI-powered features easily** - No need to be Google or OpenAI
 - 💰 **Pay per use, not huge upfront costs** - Start small, scale up
 - 🚀 **Launch AI features in weeks, not years** - Use existing AI models
-
+</div>
 </v-clicks>
 
-  </div>
 </div>
 
 <!--
@@ -280,26 +303,337 @@ The API revolution means AI isn't just a chatbot you visit - it's becoming the i
 
 ---
 
+# The API Problem: Each One is Different
+
+### Every AI Provider Has Their Own "Language"
+
+<div class="mt-8 space-y-8">
+    
+<v-clicks>
+
+- 🔧 **OpenAI API** - `messages: [{"role": "user", "content": "Hello"}]`
+- 🤖 **Anthropic API** - `messages: [{"role": "user", "content": [{"type": "text", "text": "Hello"}]}]`
+- 🧠 **Google Gemini** - `contents: [{"parts": [{"text": "Hello"}]}]`
+- 😵 **The result** - Different formats, authentication, response structures
+- 🔄 **Want to switch providers?** - Rewrite all your code
+- 💻 **Developers problem** - Learning multiple APIs, maintaining different codebases
+
+</v-clicks>
+
+</div>
+
+<!--
+Each AI provider built their API differently, making it painful for developers to switch between them or use multiple providers in one app.
+-->
+
+---
+
+# The Solution: Vercel AI SDK
+
+### One Interface to Rule Them All
+
+<div class="mt-8 space-y-8">
+    
+<v-clicks>
+
+- 🎯 **The mission** - Unified interface for all AI providers
+- 🔌 **One syntax** - Same code works with OpenAI, Anthropic, Google, etc.
+- 🚀 **Released 2023** - Perfect timing during the AI boom
+- 💡 **The genius** - Abstract away provider differences
+- 🔄 **Switch providers** - Change one line, not hundreds
+- 📦 **Beyond just chat** - Streaming, structured outputs, tool calling
+
+```typescript
+// Works with ANY provider
+const result = await generateText({
+  model: openai('gpt-4'),      // or anthropic('claude-3-5-sonnet')
+  prompt: 'Hello world'        // or google('gemini-pro')
+})
+```
+
+</v-clicks>
+
+</div>
+
+<!--
+Vercel AI SDK solved a real pain point - now developers could experiment with different AI providers without rewriting their entire codebase.
+-->
+
+---
+
+# AI SDK v5: React Hooks Magic
+
+### Building Chat Apps in Minutes, Not Days
+
+<div class="mt-8 space-y-8">
+    
+<v-clicks>
+
+- 🪄 **useChat hook** - Complete chat interface with just one hook
+- ⚡ **Auto-streaming** - Messages appear word-by-word automatically  
+- 🎯 **State management** - Messages, input, loading states handled for you
+- 🔧 **Framework support** - React, Vue, Svelte, Angular
+- 🚀 **Released 2024** - First fully typed AI framework
+
+```jsx
+const { messages, input, handleInputChange, handleSubmit } = useChat()
+// That's it! You have a working ChatGPT-style interface
+```
+
+</v-clicks>
+
+</div>
+
+<!--
+AI SDK v5 turned building AI chat apps from a complex multi-day project into a few lines of code. The magic is in how much complexity it hides.
+-->
+
+---
+
+# AI SDK: Agent Management Made Simple
+
+### From Complex Multi-Agent Systems to Simple Hooks
+
+<div class="mt-8 space-y-8">
+    
+<v-clicks>
+
+- 🤖 **useChat for agents** - Same hook handles both chat and agent workflows
+- 🛠️ **Tool calling** - AI can execute functions and chain operations
+- 🔄 **Multi-step agents** - Set `maxSteps` to control agent loops
+- 📡 **Built-in orchestration** - Messages, tool results, state managed automatically
+- 🧠 **Agent patterns** - Manual loops, automatic tool execution, termination control
+
+```jsx
+const { messages, sendMessage } = useChat({
+  api: '/api/agent',
+  maxSteps: 5  // Prevent infinite loops
+})
+
+// AI automatically calls tools, manages state, handles multi-step workflows
+```
+
+</v-clicks>
+
+</div>
+
+<!--
+AI SDK v5 unified everything under useChat - whether it's simple chat or complex multi-agent workflows, it's the same elegant interface.
+-->
+
+---
+
+# The Multi-AI Revolution: One App, All Models
+
+### How API Access Created AI Aggregator Apps
+
+<div class="mt-8 space-y-8">
+    
+<v-clicks>
+
+- 🌐 **The opportunity** - Every AI company offers APIs 
+- 💡 **The innovation** - Build one interface for all models
+- 🔥 **Examples:** T3.Chat, Poe, ChatHub, OpenRouter
+- 💰 **The value** - $8/month vs $20+$20+$20 per platform
+- 🎯 **Perfect use case** - Compare models side-by-side
+- 🚀 **Built with AI SDK** - Same unified interface we just learned about
+
+</v-clicks>
+
+</div>
+
+<!--
+This is the perfect example of how API access democratized AI - now small teams can build apps that compete with the big players by aggregating their models.
+-->
+---
+
+# The Multi-AI Revolution: One App, All Models
+
+### How API Access Created AI Aggregator Apps
+
+<div class="mt-8 space-y-8">
+    
+<v-clicks>
+
+```
+Instead of paying:
+• ChatGPT Plus: $20/month  
+• Claude Pro: $20/month
+• Gemini Advanced: $20/month
+= $60/month
+
+Pay T3.Chat: $8/month for ALL models!
+```
+
+</v-clicks>
+
+</div>
+
+<!--
+This is the perfect example of how API access democratized AI - now small teams can build apps that compete with the big players by aggregating their models.
+-->
+
+---
+
+# The Specialization Game: Different Apps, Different Strengths
+
+### Why We Still Need Multiple AI Apps
+
+<div class="mt-8 space-y-8">
+    
+<v-clicks>
+
+- 🎙️ **Voice conversations** - ChatGPT Advanced Voice
+- 🧠 **Memory & context** - Some apps remember everything, others start fresh
+- 🔍 **Search integration** - Perplexity specializes in research, others focus on chat
+- 🎨 **Creative features** - Midjourney for images, RunwayML for videos
+- 📱 **Mobile experience** - Some apps shine on desktop, others on mobile
+- 💼 **Enterprise features** - Team collaboration, admin controls, compliance
+- ⚡ **Performance** - Speed vs accuracy trade-offs vary by app
+
+**The takeaway:** Competition drives innovation - each app pushes boundaries in different directions!
+
+</v-clicks>
+
+</div>
+
+<!--
+While aggregators give access to many models, specialized apps still lead in specific features. The real win is having so many choices and seeing rapid innovation everywhere.
+-->
+
+---
+layout: intro
+---
+
+# System Prompts: The Hidden Instructions
+
+---
+
+# What is a System Prompt?
+
+### The Secret Instructions That Shape AI Behavior
+
+<div class="mt-8 space-y-8">
+    
+<v-clicks>
+
+- 🎭 **Think of it as:** Actor's character description before a play
+- 🧠 **Definition:** Instructions that tell AI how to behave, what role to play
+- 🔒 **Usually hidden** from users - you don't see it in ChatGPT interface
+- 📝 **Examples:**
+  - "You are a helpful assistant"
+  - "You are a coding expert who writes clean, well-documented code"
+  - "You are a customer service agent for XYZ company"
+- ⚙️ **Sets the tone** - Professional, casual, technical, creative
+
+</v-clicks>
+
+</div>
+
+<!--
+System prompts are like giving an actor their character backstory before they go on stage - it shapes everything they say and do.
+-->
+
+---
+layout: two-cols
+---
+
+# Built-in vs Custom System Prompts
+
+**Built-in (ChatGPT, Claude):**
+- 🏭 Set by the AI company
+- 🔒 You can't change them
+- 🌐 Same for all users
+- 📊 General purpose behavior
+
+<v-clicks>
+
+### Built-in Examples:
+- "Be helpful, harmless, and honest"
+- "Don't generate harmful content" 
+- "Admit when you don't know something"
+- "Be concise in your responses"
+
+</v-clicks>
+
+::right::
+
+<v-clicks>
+
+**Custom (via API):**
+- 🎯 You write them yourself
+- ✏️ Fully customizable
+- 👤 Different for each app/user
+- 🏢 Tailored to specific needs
+
+### Custom Examples:
+```
+You are MedBot, a medical assistant for 
+doctors. Always:
+- Ask for symptoms in detail
+- Suggest consulting specialists
+- Never provide final diagnoses
+- Use medical terminology when appropriate
+```
+
+</v-clicks>
+
+<!--
+The key difference: built-in prompts are one-size-fits-all, custom prompts let you create specialized AI for specific tasks.
+-->
+
+---
+
+# System Prompts in Real Applications
+
+### How Developers Use Custom System Prompts
+
+<div class="mt-8 space-y-8">
+    
+<v-clicks>
+
+- 🏪 **E-commerce:** "You are a shopping assistant who helps customers find products..."
+- 💼 **Business apps:** "You are a CRM assistant who helps sales teams..."
+- 🎓 **Education:** "You are a patient tutor who explains concepts step-by-step..."
+- 🏥 **Healthcare:** "You are a medical scribe who helps document patient visits..."
+- 🎨 **Creative tools:** "You are a creative writing coach who helps with storytelling..."
+- 📊 **Analytics:** "You are a data analyst who explains insights in simple terms..."
+
+**The magic:** Same AI model, completely different personalities and expertise!
+
+</v-clicks>
+
+</div>
+
+<!--
+System prompts are how developers transform a generic AI into a specialist for their specific application - it's like hiring different experts for different jobs.
+-->
+
+---
+layout: intro
+---
+
+# But how the AI can learn your data?
+
+---
+
 # The RAG Revolution
 
-## Teaching AI Your Data Without Breaking the Bank
+### Teaching AI Your Data Without Breaking the Bank
 
-<div class="flex justify-center items-center h-full">
-  <div class="space-y-8">
+<div class="mt-8 space-y-8">
     
 <v-clicks>
 
 - 🧠 **The Old Way: Fine-tuning** - Expensive, slow, required AI expertise
-- 💰 **Cost:** $50,000+ and months of work to teach AI your company data
+- 💰 **Cost:** $100,000+ and months of work to teach AI your company data
 - 🔄 **Updates:** Want to add new info? Start the whole process again
 - 📚 **RAG: Retrieval-Augmented Generation** - Introduced by Meta in 2020
-- 🚀 **The timing:** Became popular during the 2022-2023 AI boom
 - 🎯 **Think of it as:** AI with access to your company's filing cabinet
 - ⚡ **The breakthrough:** AI can use ANY data you give it, instantly
 
 </v-clicks>
 
-  </div>
 </div>
 
 <!--
@@ -312,8 +646,7 @@ RAG changed everything - instead of expensive fine-tuning, you can now just hand
 
 ## How RAG Rode the AI Wave
 
-<div class="flex justify-center items-center h-full">
-  <div class="space-y-6">
+<div class="mt-8 space-y-6">
     
 <v-clicks>
 
@@ -331,7 +664,6 @@ RAG changed everything - instead of expensive fine-tuning, you can now just hand
 
 </v-clicks>
 
-  </div>
 </div>
 
 <!--
@@ -344,7 +676,7 @@ layout: two-cols
 
 # Fine-tuning vs RAG: The Comparison
 
-## Before RAG (Fine-tuning):
+### Before RAG (Fine-tuning):
 
 <v-clicks>
 
@@ -357,9 +689,12 @@ layout: two-cols
 
 ::right::
 
+
+<div class="mt-24">
+
 <v-clicks>
 
-## With RAG (Retrieval-Augmented Generation):
+### With RAG (Retrieval-Augmented Generation):
 
 </v-clicks>
 
@@ -372,6 +707,7 @@ layout: two-cols
 
 </v-clicks>
 
+</div>
 <!--
 The contrast is dramatic - RAG made AI accessible to businesses of all sizes by removing the massive barriers of fine-tuning.
 -->
